@@ -1,55 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profil Saya - Lamaran Kerja</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamaran - Nama Anda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn { 
+      from {opacity:0; transform: translateY(20px);} 
+      to {opacity:1; transform: translateY(0);} 
+    }
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #ee9ca7;
+      object-fit: cover;
+    }
+    header h1 {
+      margin: 15px 0 5px;
+      color: #ee5a73;
+    }
+    header p { color: #555; }
+    .section {
+      margin-bottom: 25px;
+    }
+    .section h2 {
+      color: #ee5a73;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ee5a73;
+      display: inline-block;
+      padding-bottom: 3px;
+    }
+    .skills span {
+      display: inline-block;
+      background: #ee5a73;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 25px;
+      margin: 4px 4px 0 0;
+      font-size: 0.9em;
+      transition: transform 0.2s;
+    }
+    .skills span:hover { transform: scale(1.1); background: #ff7f9c; }
+    .contact a {
+      color: #ee5a73;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
-<div class="container">
+  <div class="container">
     <header>
-        <img src="foto-profil.jpg" alt="Foto Profil">
-        <h1>Nama Anda</h1>
-        <p>Posisi yang Dilamar | Kota</p>
+      <!-- FOTO PROFIL DUMMY (ganti link dengan foto Anda sendiri nanti) -->
+      <img src="https://images.unsplash.com/photo-1603415526960-f7e0328a6a2b?crop=faces&fit=crop&w=200&h=200" alt="Foto Profil">
+      <h1>Nama Anda</h1>
+      <p>Posisi yang Dilamar | Kota</p>
     </header>
 
     <div class="section about">
-        <h2><i class="fas fa-user icon"></i>Tentang Saya</h2>
-        <p>Saya seorang profesional yang bersemangat dalam bidang [bidang pekerjaan]. Memiliki pengalaman dalam [pengalaman utama] dan selalu berkomitmen memberikan hasil terbaik.</p>
+      <h2>Tentang Saya</h2>
+      <p>Saya seorang profesional yang bersemangat dalam bidang [bidang pekerjaan]. Memiliki pengalaman dalam [pengalaman utama] dan berkomitmen memberikan hasil terbaik.</p>
     </div>
 
     <div class="section education">
-        <h2><i class="fas fa-graduation-cap icon"></i>Pendidikan</h2>
-        <ul>
-            <li>S1 [Nama Jurusan] - [Nama Universitas], [Tahun Lulus]</li>
-            <li>SMA [Nama Sekolah], [Tahun Lulus]</li>
-        </ul>
+      <h2>Pendidikan</h2>
+      <ul>
+        <li>S1 [Nama Jurusan] - [Nama Universitas], [Tahun Lulus]</li>
+        <li>SMA [Nama Sekolah], [Tahun Lulus]</li>
+      </ul>
     </div>
 
     <div class="section experience">
-        <h2><i class="fas fa-briefcase icon"></i>Pengalaman Kerja</h2>
-        <ul>
-            <li>[Jabatan] - [Nama Perusahaan] ([Tahun Mulai]-[Tahun Selesai])<br>Deskripsi singkat tanggung jawab & pencapaian.</li>
-        </ul>
+      <h2>Pengalaman Kerja</h2>
+      <ul>
+        <li>[Jabatan] - [Nama Perusahaan] ([Tahun Mulai] - [Tahun Selesai])</li>
+      </ul>
     </div>
 
     <div class="section skills">
-        <h2><i class="fas fa-lightbulb icon"></i>Keterampilan</h2>
-        <span>Microsoft Office</span>
-        <span>Adobe Photoshop</span>
-        <span>Web Design</span>
-        <span>Analisis Data</span>
+      <h2>Keterampilan</h2>
+      <span>Microsoft Office</span>
+      <span>Photoshop</span>
+      <span>Web Design</span>
+      <span>Analisis Data</span>
     </div>
 
     <div class="section contact">
-        <h2><i class="fas fa-envelope icon"></i>Kontak</h2>
-        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-        <p>Telepon: <a href="tel:+628123456789">+62 812 3456 789</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+      <p>Telepon: <a href="tel:+628123456789">+62 812 3456 789</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
     </div>
-</div>
+  </div>
 </body>
 </html>
